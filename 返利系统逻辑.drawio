@@ -1,1 +1,361 @@
-<mxfile host="www.draw.io" modified="2019-12-24T05:47:21.185Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:57.0) Gecko/20100101 Firefox/57.0" version="12.4.3" etag="10B6d2qqF8fUsbI1MsBO" type="github" pages="1"><diagram id="AgFi96pMuozTw7vKlUR_">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="www.draw.io" modified="2019-12-24T07:49:54.516Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:57.0) Gecko/20100101 Firefox/57.0" etag="NrKk7CwtMcjgjPsw9RZe" version="12.4.3" type="github" pages="1">
+  <diagram id="AgFi96pMuozTw7vKlUR_" name="Page-1">
+    <mxGraphModel dx="1956" dy="746" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="lm9AEygw_mZnJKfXNgVs-1" value="返利系统" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="160" width="120" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="lm9AEygw_mZnJKfXNgVs-2" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;direction=south;" vertex="1" parent="1">
+          <mxGeometry x="-260" y="220" width="1280" height="120" as="geometry"/>
+        </mxCell>
+        <mxCell id="lm9AEygw_mZnJKfXNgVs-3" value="定额返利" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-330" y="340" width="150" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="lm9AEygw_mZnJKfXNgVs-7" value="定额返利分摊" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-500" y="340" width="84" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="lm9AEygw_mZnJKfXNgVs-9" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_1;align=left;pointerEvents=1;direction=south;" vertex="1" parent="1">
+          <mxGeometry x="-710" y="480" width="320" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="lm9AEygw_mZnJKfXNgVs-10" value="调用物资(原材料、耗材)供货关系接口" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-770" y="530" width="120" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="lm9AEygw_mZnJKfXNgVs-11" value="" style="endArrow=classic;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="lm9AEygw_mZnJKfXNgVs-3" target="lm9AEygw_mZnJKfXNgVs-9">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-570" y="480" as="sourcePoint"/>
+            <mxPoint x="-549" y="470" as="targetPoint"/>
+            <Array as="points">
+              <mxPoint x="-550" y="370"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lm9AEygw_mZnJKfXNgVs-13" value="" style="endArrow=none;html=1;exitX=1.6;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-550" y="536" as="sourcePoint"/>
+            <mxPoint x="-550" y="476" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lm9AEygw_mZnJKfXNgVs-14" value="调用门店供货关系接口" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-610" y="530" width="120" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="lm9AEygw_mZnJKfXNgVs-15" value="调用仓供货关系接口" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-450" y="530" width="120" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="lm9AEygw_mZnJKfXNgVs-16" value="遍历供货关系" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-770" y="618" width="120" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="lm9AEygw_mZnJKfXNgVs-17" value="根据供货关系中的租户、门店、部门、物资ID获取仓报价和库存" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-770" y="707" width="120" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="lm9AEygw_mZnJKfXNgVs-18" value="遍历供货关系" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-610" y="618" width="120" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="lm9AEygw_mZnJKfXNgVs-19" value="遍历供货关系" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-450" y="618" width="120" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="lm9AEygw_mZnJKfXNgVs-20" value="根据供货关系中的租户、门店、skuID获取仓报价和库存" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-610" y="705" width="120" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="lm9AEygw_mZnJKfXNgVs-21" value="根据供货关系中的租户、门店、仓ID获取仓报价和库存" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-450" y="705" width="120" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="lm9AEygw_mZnJKfXNgVs-22" value="" style="endArrow=classic;html=1;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-711" y="580" as="sourcePoint"/>
+            <mxPoint x="-711" y="620" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lm9AEygw_mZnJKfXNgVs-23" value="" style="endArrow=classic;html=1;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-550.5" y="581" as="sourcePoint"/>
+            <mxPoint x="-550.5" y="621" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lm9AEygw_mZnJKfXNgVs-24" value="" style="endArrow=classic;html=1;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-390.5" y="579" as="sourcePoint"/>
+            <mxPoint x="-390.5" y="619" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lm9AEygw_mZnJKfXNgVs-25" value="" style="endArrow=classic;html=1;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-713.5" y="668" as="sourcePoint"/>
+            <mxPoint x="-713.5" y="708" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lm9AEygw_mZnJKfXNgVs-26" value="" style="endArrow=classic;html=1;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-550.5" y="668" as="sourcePoint"/>
+            <mxPoint x="-550.5" y="708" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lm9AEygw_mZnJKfXNgVs-27" value="" style="endArrow=classic;html=1;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-390.5" y="667" as="sourcePoint"/>
+            <mxPoint x="-390.5" y="707" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lm9AEygw_mZnJKfXNgVs-28" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_1;align=left;pointerEvents=1;direction=north;" vertex="1" parent="1">
+          <mxGeometry x="-720" y="757" width="340" height="143" as="geometry"/>
+        </mxCell>
+        <mxCell id="lm9AEygw_mZnJKfXNgVs-29" value="保存定额明细" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-620" y="940" width="120" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="lm9AEygw_mZnJKfXNgVs-30" value="" style="endArrow=classic;html=1;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-560.5" y="900" as="sourcePoint"/>
+            <mxPoint x="-560.5" y="940" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lm9AEygw_mZnJKfXNgVs-31" value="销售返利" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="340" width="150" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="lm9AEygw_mZnJKfXNgVs-32" value="" style="endArrow=none;html=1;strokeWidth=2;entryX=0.533;entryY=0.703;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="lm9AEygw_mZnJKfXNgVs-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="120" y="340" as="sourcePoint"/>
+            <mxPoint x="120" y="290" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lm9AEygw_mZnJKfXNgVs-33" value="根据销售返利规则，获取大数据推送过来的规则明细" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-110" y="450" width="140" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="lm9AEygw_mZnJKfXNgVs-34" value="遍历返利明细" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-110" y="530" width="140" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="lm9AEygw_mZnJKfXNgVs-35" value="根据返利规则获取规则限制表" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-110" y="612" width="140" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="lm9AEygw_mZnJKfXNgVs-36" value="如果返利明细中的skuId与限制表中的skuId相等，则取出skuId对应的返利比例" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-150" y="693" width="220" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="lm9AEygw_mZnJKfXNgVs-37" value="根据sku数量*返利比例，计算出当前sku返利金额" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-150" y="776" width="220" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="lm9AEygw_mZnJKfXNgVs-38" value="返利单金额=sku返利金额累加之和" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-150" y="854" width="220" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="lm9AEygw_mZnJKfXNgVs-39" value="" style="endArrow=classic;html=1;strokeWidth=2;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="lm9AEygw_mZnJKfXNgVs-31" target="lm9AEygw_mZnJKfXNgVs-33">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-190" y="470" as="sourcePoint"/>
+            <mxPoint x="-40" y="440" as="targetPoint"/>
+            <Array as="points">
+              <mxPoint x="-40" y="370"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lm9AEygw_mZnJKfXNgVs-40" value="" style="endArrow=classic;html=1;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-40.5" y="500" as="sourcePoint"/>
+            <mxPoint x="-40.5" y="530" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lm9AEygw_mZnJKfXNgVs-41" value="" style="endArrow=classic;html=1;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-40.5" y="580" as="sourcePoint"/>
+            <mxPoint x="-40.5" y="610" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lm9AEygw_mZnJKfXNgVs-42" value="" style="endArrow=classic;html=1;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-40.5" y="662" as="sourcePoint"/>
+            <mxPoint x="-40.5" y="692" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lm9AEygw_mZnJKfXNgVs-43" value="" style="endArrow=classic;html=1;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-40.5" y="743" as="sourcePoint"/>
+            <mxPoint x="-40.5" y="773" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lm9AEygw_mZnJKfXNgVs-44" value="" style="endArrow=classic;html=1;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-40.5" y="826" as="sourcePoint"/>
+            <mxPoint x="-40.5" y="856" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lm9AEygw_mZnJKfXNgVs-45" value="计算返利金额逻辑" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-50" y="340" width="84" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="lm9AEygw_mZnJKfXNgVs-46" value="规模返利" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="336.04" width="150" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="lm9AEygw_mZnJKfXNgVs-47" value="" style="endArrow=none;html=1;strokeWidth=2;entryX=0.533;entryY=0.703;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="550" y="336.04" as="sourcePoint"/>
+            <mxPoint x="550.1599999999999" y="280.00000000000006" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lm9AEygw_mZnJKfXNgVs-48" value="根据规模返利规则，获取大数据推送过来的规则汇总表" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="310" y="450" width="140" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="lm9AEygw_mZnJKfXNgVs-49" value="遍历大数据推送过来的规则汇总表" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="310" y="530" width="140" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="lm9AEygw_mZnJKfXNgVs-50" value="根据返利规则，获取此规则的阶梯列表" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="310" y="612" width="140" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="lm9AEygw_mZnJKfXNgVs-51" value="根据当前规则的总的采购金额，确定在哪个阶梯里，得到返利比例" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="310" y="693" width="140" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="lm9AEygw_mZnJKfXNgVs-52" value="返利单的返利金额=采购金额*返利比例" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="310" y="776" width="140" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="lm9AEygw_mZnJKfXNgVs-53" value="发送规模返利金额拆分消息" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="310" y="854" width="140" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="lm9AEygw_mZnJKfXNgVs-54" value="" style="endArrow=classic;html=1;strokeWidth=2;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="470" y="370" as="sourcePoint"/>
+            <mxPoint x="380" y="450" as="targetPoint"/>
+            <Array as="points">
+              <mxPoint x="380" y="370"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lm9AEygw_mZnJKfXNgVs-55" value="计算返利单返利金额逻辑" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="366" y="340" width="84" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="lm9AEygw_mZnJKfXNgVs-56" value="" style="endArrow=classic;html=1;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="379.5" y="500" as="sourcePoint"/>
+            <mxPoint x="379.5" y="530" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lm9AEygw_mZnJKfXNgVs-57" value="" style="endArrow=classic;html=1;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="379.5" y="582" as="sourcePoint"/>
+            <mxPoint x="379.5" y="612" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lm9AEygw_mZnJKfXNgVs-58" value="" style="endArrow=classic;html=1;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="379.5" y="663" as="sourcePoint"/>
+            <mxPoint x="379.5" y="693" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lm9AEygw_mZnJKfXNgVs-59" value="" style="endArrow=classic;html=1;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="379.5" y="746" as="sourcePoint"/>
+            <mxPoint x="379.5" y="776" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lm9AEygw_mZnJKfXNgVs-60" value="" style="endArrow=classic;html=1;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="379.5" y="826" as="sourcePoint"/>
+            <mxPoint x="379.5" y="856" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lm9AEygw_mZnJKfXNgVs-61" value="根据返利单获取返利明细" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="440" width="140" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="lm9AEygw_mZnJKfXNgVs-63" value="" style="endArrow=classic;html=1;strokeWidth=2;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="lm9AEygw_mZnJKfXNgVs-46" target="lm9AEygw_mZnJKfXNgVs-61">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="670" y="410" as="sourcePoint"/>
+            <mxPoint x="720" y="360" as="targetPoint"/>
+            <Array as="points">
+              <mxPoint x="710" y="366"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lm9AEygw_mZnJKfXNgVs-64" value="处理返利单金额拆分逻辑" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="640" y="336.04" width="84" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="lm9AEygw_mZnJKfXNgVs-65" value="遍历返利明细" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="520" width="140" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="lm9AEygw_mZnJKfXNgVs-66" value="计算每个明细的返利金额" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="600" width="140" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="lm9AEygw_mZnJKfXNgVs-67" value="如果返利单金额与返利明细金额之和不相相等，则将差值补充到返利明细上" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="590" y="680" width="240" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="lm9AEygw_mZnJKfXNgVs-68" value="" style="endArrow=classic;html=1;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="709.5" y="490" as="sourcePoint"/>
+            <mxPoint x="709.5" y="520" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lm9AEygw_mZnJKfXNgVs-69" value="" style="endArrow=classic;html=1;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="709.5" y="570" as="sourcePoint"/>
+            <mxPoint x="709.5" y="600" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lm9AEygw_mZnJKfXNgVs-70" value="" style="endArrow=classic;html=1;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="709.5" y="650" as="sourcePoint"/>
+            <mxPoint x="709.5" y="680" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lm9AEygw_mZnJKfXNgVs-71" value="毛保返利" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="950" y="336.04" width="150" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="lm9AEygw_mZnJKfXNgVs-72" value="根据毛保返利规则，获取大数据推送过来的规则汇总表" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1130" y="458" width="140" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="lm9AEygw_mZnJKfXNgVs-73" value="" style="endArrow=classic;html=1;strokeWidth=2;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="950" y="370" as="sourcePoint"/>
+            <mxPoint x="750" y="440" as="targetPoint"/>
+            <Array as="points">
+              <mxPoint x="750" y="370"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lm9AEygw_mZnJKfXNgVs-74" value="处理返利单金额拆分逻辑" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="820" y="340" width="84" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="lm9AEygw_mZnJKfXNgVs-75" value="从汇总表中取出成本、收入两个字段" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1130" y="614" width="140" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="lm9AEygw_mZnJKfXNgVs-76" value="遍历大数据推送过来的规则汇总表" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1130" y="539" width="140" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="lm9AEygw_mZnJKfXNgVs-77" value="返利单的返利金额=收入*返利比例-(收入-成本)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1130" y="693" width="140" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="lm9AEygw_mZnJKfXNgVs-78" value="发送毛保返利金额拆分消息" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="1130" y="770" width="140" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="lm9AEygw_mZnJKfXNgVs-79" value="" style="endArrow=classic;html=1;strokeWidth=2;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="lm9AEygw_mZnJKfXNgVs-71">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1120" y="365.03999999999996" as="sourcePoint"/>
+            <mxPoint x="1200" y="455" as="targetPoint"/>
+            <Array as="points">
+              <mxPoint x="1200" y="365"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lm9AEygw_mZnJKfXNgVs-80" value="计算返利单返利金额逻辑" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1130" y="336.04" width="84" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="lm9AEygw_mZnJKfXNgVs-81" value="" style="endArrow=classic;html=1;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1199.5" y="508" as="sourcePoint"/>
+            <mxPoint x="1199.5" y="538" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lm9AEygw_mZnJKfXNgVs-82" value="" style="endArrow=classic;html=1;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1199.5" y="589" as="sourcePoint"/>
+            <mxPoint x="1199.5" y="619" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lm9AEygw_mZnJKfXNgVs-83" value="" style="endArrow=classic;html=1;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1199.5" y="664" as="sourcePoint"/>
+            <mxPoint x="1199.5" y="694" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lm9AEygw_mZnJKfXNgVs-84" value="" style="endArrow=classic;html=1;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1199.5" y="743" as="sourcePoint"/>
+            <mxPoint x="1199.5" y="773" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
